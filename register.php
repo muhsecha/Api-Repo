@@ -3,7 +3,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $roleuser = $_POST['roleuser'];
 $json["hasil"] = array();
-$con = mysqli_connect("localhost", 'root',  '', "dbbajawacoffe");
+$con = mysqli_connect("localhost", 'hasan', 'kopiko', "dbbajawacoffe");
 $query = "SELECT id FROM tb_user WHERE email = '$email'";
 $check = mysqli_num_rows(mysqli_query($con, $query));
 if ($check == 0) {

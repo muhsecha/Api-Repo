@@ -1,7 +1,7 @@
 <?php
 $id = $_POST['id'];
 $statusOrder = $_POST['statusOrder'];
-$con = mysqli_connect("localhost", 'root',  '', "dbbajawacoffe");
+$con = mysqli_connect("localhost", 'hasan', 'kopiko', "dbbajawacoffe");
 $sql = "UPDATE tb_nota SET statusOrder='$statusOrder' WHERE id='$id'";
 $json["hasil"] = array();
 if ($con->query($sql) === TRUE) {

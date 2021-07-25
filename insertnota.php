@@ -6,7 +6,7 @@ $note = $_POST['note'];
 $kodeNota = $_POST['kodeNota'];
 $totalHarga = $_POST['totalHarga'];
 $statusOrder = $_POST['statusOrder'];
-$con = mysqli_connect("localhost", 'root',  '', "dbbajawacoffe");
+$con = mysqli_connect("localhost", 'hasan', 'kopiko', "dbbajawacoffe");
 $sql = "INSERT INTO tb_nota (namaCustomer , tanggalNota , nohpCustomer, note, kodeNota, totalHarga, statusOrder) VALUES ('$namaCustomer', '$tanggalNota', '$nohpCustomer', '$note', '$kodeNota', '$totalHarga', '$statusOrder')  ";
 $json["hasil"] = array();
 if ($con->query($sql) === TRUE) {

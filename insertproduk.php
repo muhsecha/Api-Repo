@@ -6,7 +6,7 @@ $hargaMakanan = $_POST['hargaMakanan'];
 
 $avatar = $_POST['avatar'];
 
-$con = mysqli_connect("localhost", 'root',  '', "dbbajawacoffe");
+$con = mysqli_connect("localhost", 'hasan', 'kopiko', "dbbajawacoffe");
 $sql = "INSERT INTO tb_makanan (kodeMakanan , namaMakanan , jenisMakanan , avatar, hargaMakanan) VALUES ('$kodeMakanan', '$namaMakanan', '$jenisMakanan', '$avatar', '$hargaMakanan')  ";
 $json["hasil"] = array();
 if ($con->query($sql) === TRUE) {

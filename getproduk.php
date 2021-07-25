@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost", 'root',  '', "dbbajawacoffe");
+$con = mysqli_connect("localhost", 'hasan', 'kopiko', "dbbajawacoffe");
 $sql = "SELECT * FROM tb_makanan";
 $json["STATUS"] = array();
 $json["MESSAGE"] = array();
