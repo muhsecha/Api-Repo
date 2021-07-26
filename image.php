@@ -23,7 +23,7 @@ if ($_FILES['avatar']) {
                 "status" => "success",
                 "error" => false,
                 "message" => "File uploaded successfully",
-                "url" => '192.168.1.4/sepeda' . "/" . $upload_name
+                "url" => $upload_name
             );
         } else {
             $response = array(
