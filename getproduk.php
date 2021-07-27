@@ -16,7 +16,7 @@ if ($result) {
             $namaMakanan = $row['namaMakanan'];
             $jenisMakanan = $row['jenisMakanan'];
             $hargaMakanan = $row['hargaMakanan'];
-            $avatar = $row['avatar'];
+            $avatar = $row['gambar'];
             $array["id"] = $id;
             $array["kodeMakanan"] = $kodeMakanan;
             $array["namaMakanan"] = $namaMakanan;
