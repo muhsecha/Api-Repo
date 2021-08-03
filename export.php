@@ -16,7 +16,7 @@ header("Content-Disposition: attachment; filename=rekap.xls");
         <th>Total Harga</th>
     </tr>
     <?php
-    $conn = mysqli_connect("localhost", 'hasan', 'kopiko', "dbbajawacoffe");
+    $conn = mysqli_connect("localhost", "root", "", "dbbajawacoffe");
     $data = mysqli_query($conn, "SELECT * FROM tb_nota WHERE statusOrder = 'orderDiterima' ");
     $no = 0;
     while ($dt = mysqli_fetch_array($data)) {

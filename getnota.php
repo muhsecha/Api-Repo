@@ -1,6 +1,6 @@
 <?php
 $statusOrder = $_POST['statusOrder'];
-$con = mysqli_connect("localhost", 'hasan', 'kopiko', "dbbajawacoffe");
+$con = mysqli_connect("localhost", "root", "", "dbbajawacoffe");
 $sql = "SELECT * FROM tb_nota where statusOrder = '$statusOrder'";
 $json["STATUS"] = array();
 $json["MESSAGE"] = array();

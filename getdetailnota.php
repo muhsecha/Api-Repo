@@ -1,6 +1,6 @@
 <?php
 $kodeNota = $_POST['kodeNota'];
-$con = mysqli_connect("localhost", 'hasan', 'kopiko', "dbbajawacoffe");
+$con = mysqli_connect("localhost", "root", "", "dbbajawacoffe");
 $sql = "SELECT * FROM tb_detail_nota where kodeNota = '$kodeNota'";
 $json["STATUS"] = array();
 $json["MESSAGE"] = array();

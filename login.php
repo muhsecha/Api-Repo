@@ -1,7 +1,7 @@
 <?php
 $username = $_POST['username'];
 $password = $_POST['password'];
-$con = mysqli_connect("localhost", 'hasan', 'kopiko', "dbbajawacoffe");
+$con = mysqli_connect("localhost", "root", "", "dbbajawacoffe");
 $sql = "select * from tb_user where username = '$username' and password = '$password' ";
 $result = mysqli_query($con, $sql);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
