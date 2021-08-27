@@ -11,6 +11,7 @@ $sql = "INSERT INTO tb_nota (namaCustomer , tanggalNota , nohpCustomer, note, ko
 $json["hasil"] = array();
 if ($con->query($sql) === TRUE) {
     $json["hasil"]["respon"] = true;
+    $json["hasil"]["id"] = $con->insert_id;
 } else {
     $json["hasil"]["respon"] = false;
 }
